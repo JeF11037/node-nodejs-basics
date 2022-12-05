@@ -7,7 +7,7 @@ const parseEnv = () => {
         const env_variables = Object.keys(env).filter(v => v.startsWith(prefix));
         for (let value of env_variables)
         {
-            stdout.write(`${value} = ${env_variables[value.toString()]}; `);
+            stdout.write(`${value} = ${env[value]}; `);
         }
         console.log('\n\nDone !\n');
     } catch (error) {
